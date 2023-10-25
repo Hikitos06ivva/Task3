@@ -1,0 +1,491 @@
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(0,"");
+	int menu;
+	cout << "Перед вами программа для перевода старинных русских мер \n\n Выберите пункт меню:\n\n[1] саженей в метры \n[2] из дюймов в сантиметры\n[3] футов в метры\n[4] драхм в граммы\n[5] унщий в граммы\n[6] фунтов в килограммы\n[7]аршины в метры\n[8] золотников в граммы \n[9] дюймоv в миллиметры\n";
+	cin >> menu;
+	system("cls");
+	switch (menu)
+	{
+	case 1:
+		double sazh;
+		cout << "Введите количество саженей для перевода в метры\n";
+		cin >> sazh;
+		cout << "Результат: " << sazh * 2.1336; 
+		break;
+	case 2:
+		double dyim1;
+		cout << "Введите количество дюймов для перевода в сантиметры\n";
+		cin >> dyim1; 
+		cout << "Результат: " << dyim1 * 2.5; 
+		break;
+	case 3:
+		double fyt;
+		cout << "Введите количество футов перевода в метры\n";
+		cin >> fyt;
+		cout << "Результат: " << fyt * 0.3048;
+		break;
+	case 4:
+		double drahm;
+		cout << "Введите количество драхм для перевода в граммы\n";
+		cin >> drahm;
+		cout << "Результат: " << drahm * 3.7325;
+		break;
+	case 5:
+		double ync;
+		cout << "Введите количество унций для перевода в граммы\n";
+		cin >> ync;
+		cout << "Результат: " << ync * 29.86; 
+		break;
+	case 6:
+		double funt1;
+		cout << "Введите количество фунтов для перевода в килограммы\n";
+		cin >> funt1;
+		cout << "Результат: " << funt1 * 0.40951; 
+		break;
+	case 7:
+		double arsh;
+		cout << "Введите количество аршинов для перевода в метры\n";
+		cin >> arsh;
+		cout << "Результат: " << arsh * 0.7112;
+		break;
+	case 8:
+		double zolot;
+		cout << "Введите количество золотняков для перевода в граммы\n";
+		cin >> zolot;
+		cout << "Результат: " << zolot * 4.2657;
+		break;
+	case 9:
+		double dyim2;
+		cout << "Введите количество дюймов для перевода в миллиметров\n";
+		cin >> dyim2; 
+		cout << "Результат: " << dyim2 * 25.3995; 
+		break;
+	default:
+	cout << "Неверное значение";
+		break;
+	}
+}
+________________________________________________________________________________________________________________________________________________
+#include <iostream> 
+using namespace std; 
+int main() 
+{ 
+ setlocale(0,""); 
+ int rub;  
+ int years; 
+ cout << "Введите сумму, которую желаете положить на сберегательный счет: "; 
+ cin >> rub; 
+ system("cls"); 
+ cout << "Введите срок, на который желаете положить деньги (в годах): "; 
+ cin >> years;  
+ cout << "Через " << years << " года вы получите " << rub / 100 * 3 * years+rub<<" рублей"; 
+}
+________________________________________________________________________________________________________________________________________________
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    setlocale(0, "");
+    const int size = 10;
+    long long sum = 1;
+    for (int i = 1; i <= size; i++)
+        sum *= (i * (i + 1)) / 2;
+    cout << sum << endl;
+    return 0;
+}
+________________________________________________________________________________________________________________________________________________
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int first,second,tree,four,five,six,seven,eight,nine,ten, first1, second1, tree1, four1, five1, six1, seven1, eight1, nine1, ten1;
+    setlocale(0, "");
+    cout << "программа тест:\n";
+    cout << "1. Сколько грамм белка надо кушать в день?\n\n Варианты ответа:\n[1] 1,2 \n[2] 2 на вес тела\n[3]много\n ";
+    cin >> first;
+    switch (first)
+    {
+    case 1:
+        cout << "не верно(";
+        break;
+    case 2:
+        cout << " верно !!!";
+        break;
+    case 3:
+        cout << "не верно(";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "2. Мой любимый вкус чипсов?  \n\n Варианты ответа:\n [1] лук\n [2] краб\n [3] не люблю я чипсы \n ";
+    cin >> second;
+    switch (second)
+    {
+    case 1:
+        cout << "не верно(";
+        break;
+    case 2:
+        cout << "не верно(";
+        break;
+    case 3:
+        cout << "верно !!!";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "3.Какую музыку я люблю?\n\n Варианты ответа:\n[1]БРАЗИЛЬСКИЙ ФОНК \n[2]моцарт шуберт и тд \n[3]пендорсов\n ";
+    cin >> tree;
+    switch (tree)
+    {
+    case 1:
+        cout << "верно !!!";
+        break;
+    case 2:
+        cout << "не верно(";
+        break;
+    case 3:
+        cout << "не верно(";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "4. 2 умножить на 2 ? \n\n Варианты ответа:\n[1]4\n[2]3\n[3]5000\n ";
+    cin >> four;
+    switch (four)
+    {
+    case 1:
+        cout << "верно !!!";
+        break;
+    case 2:
+        cout << "не верно(";
+        break;
+    case 3:
+        cout << "не верно(";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "5.сколько планет в солнечной системе ? \n\n Варианты ответа:\n[1]8\n[2]9\n[3]5000\n ";
+    cin >> five;
+    switch (five)
+    {
+    case 1:
+        cout << "верно !!!";
+        break;
+    case 2:
+        cout << "не верно(";
+        break;
+    case 3:
+        cout << "не верно(";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "6. какого цвета у меня глаза  ? \n\n Варианты ответа:\n[1]карие\n[2]зелёные\n[3]красные\n ";
+    cin >> six;
+    switch (six)
+    {
+    case 1:
+        cout << "верно !!!";
+        break;
+    case 2:
+        cout << "не верно(";
+        break;
+    case 3:
+        cout << "не верно(";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "7.какую оценку я хочу за такой тест  ? \n\n Варианты ответа:\n[1]5\n[2]5\n[3]5\n ";
+    cin >> seven;
+    switch (seven)
+    {
+    case 1:
+        cout << "верно !!!";
+        break;
+    case 2:
+        cout << "верно !!!";
+        break;
+    case 3:
+        cout << "верно !!!";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "8.самый плохой ноут ? \n\n Варианты ответа:\n[1]msi\n[2]хуявей\n[3]hp\n ";
+    cin >> eight;
+    switch (eight)
+    {
+    case 1:
+        cout << "не верно(";
+        break;
+    case 2:
+        cout << "не верно(";
+        break;
+    case 3:
+        cout << "верно !!!";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "9.тимофей натурал ? \n\n Варианты ответа:\n[1]нет \n[2]не натурал \n[3]да \n ";
+    cin >> nine;
+    switch (nine)
+    {
+    case 1:
+        cout << "верно !!!";
+        break;
+    case 2:
+        cout << "не верно(";
+        break;
+    case 3:
+        cout << "не верно(";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "10. когда домой ? \n\n Варианты ответа:\n[1]никогда\n[2]в 16:20\n[3]скоро\n ";
+    cin >> ten;
+    switch (ten)
+    {
+    case 1:
+        cout << "не верно(";
+        break;
+    case 2:
+        cout << "верно !!!";
+        break;
+    case 3:
+        cout << "не верно(";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "11.МАДК лучшая шарага? \n\n Варианты ответа:\n[1]7\n[2]да\n[3]нет\n ";
+    cin >> first1;
+    switch (first1)
+    {
+    case 1:
+        cout << "не верно(";
+        break;
+    case 2:
+        cout << "не верно(";
+        break;
+    case 3:
+        cout << "верно !!!";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "12.иванов гений программирования? \n\n Варианты ответа:\n[1]ДААААА\n[2]он олух спит все время\n[3]у нас симбиоз и мы балдеем\n ";
+    cin >> second1;
+    switch (second1)
+    {
+    case 1:
+        cout << "не верно(";
+        break;
+    case 2:
+        cout << "не верно(";
+        break;
+    case 3:
+        cout << "верно !!!";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "13.илюха мистер бист? \n\n Варианты ответа:\n[1]ДААААААА!!!!!!!!!\n[2]нет он просто илюшенька\n[3]мой масик\n ";
+    cin >> tree1;
+    switch (tree1)
+    {
+    case 1:
+        cout << "не верно(";
+        break;
+    case 2:
+        cout << "верно !!!";
+        break;
+    case 3:
+        cout << "не верно(";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "14.какой телефон самый хороший? \n\n Варианты ответа:\n[1]айфон\n[2]самсунг\n[3]поко х3 про \n ";
+    cin >> four1;
+    switch (four1)
+    {
+    case 1:
+        cout << "не верно(";
+        break;
+    case 2:
+        cout << "не верно(";
+        break;
+    case 3:
+        cout << "верно !!!";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "15.  сколько волос на голове? \n\n Варианты ответа:\n[1]да\n[2]много\n[3]100 000\n ";
+    cin >> five1;
+    switch (five1)
+    {
+    case 1:
+        cout << "не верно(";
+        break;
+    case 2:
+        cout << "не верно(";
+        break;
+    case 3:
+        cout << "верно !!!";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "16.70*1? \n\n Варианты ответа:\n[1]100\n[2]32\n[3]70\n ";
+    cin >> six1;
+    switch (six1)
+    {
+    case 1:
+        cout << "не верно(";
+        break;
+    case 2:
+        cout << "не верно(";
+        break;
+    case 3:
+        cout << "верно !!!";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "17.сколько стоит худи трешер? \n\n Варианты ответа:\n[1]1000р на озоне\n[2]мама подарила\n[3]7800р легит)\n ";
+    cin >>seven1;
+    switch (seven1)
+    {
+    case 1:
+        cout << "не верно(";
+        break;
+    case 2:
+        cout << "верно !!!";
+        break;
+    case 3:
+        cout << "не верно(";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "18сколько часов в день можно сидеть в тик токе ? \n\n Варианты ответа:\n[1]сколько хочешь\n[2]3\n[3] он опять слетел гад\n ";
+    cin >> eight1;
+    switch (eight1)
+    {
+    case 1:
+        cout << "верно !!!";
+        break;
+    case 2:
+        cout << "не верно(";
+        break;
+    case 3:
+        cout << "не верно(";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "19.2000 + 23 - 3? \n\n Варианты ответа:\n[1]3840273459724\n[2]я не умею считать \n[3]2020\n ";
+    cin >> nine1;
+    switch (nine1)
+    {
+    case 1:
+        cout << "не верно(";
+        break;
+    case 2:
+        cout << "не верно(";
+        break;
+    case 3:
+        cout << "верно !!!";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+    cout << "20.лучшая форма ногтей? \n\n Варианты ответа:\n[1]острый миндаль\n[2]квадрат\n[3]стилет\n ";
+    cin >> tree;
+    switch (tree)
+    {
+    case 1:
+        cout << "они все хороши по своему";
+        break;
+    case 2:
+        cout << "они все хороши по своему";
+        break;
+    case 3:
+        cout << "они все хороши по своему";
+        break;
+    default:
+        cout << "такого ответа нет";
+        break;
+    }
+    system("pause");
+    system("cls");
+} 
